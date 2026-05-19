@@ -10,7 +10,7 @@ scripting, assembly, and enough functional Python to read other people's
 code and write tools that actually work.
 
 This is not a short path. It's a 31-month plan, and it isn't fully
-self-taught either — alongside the self-directed work it also includes
+self-taught either - alongside the self-directed work it also includes
 structured courses. What's written here is just a summary of the route.
 The repo itself is where I track the real progress as it happens.
 
