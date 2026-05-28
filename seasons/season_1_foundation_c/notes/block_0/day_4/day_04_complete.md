@@ -1,7 +1,7 @@
 # DAY_04 - SIGNED, UNSIGNED AND TWO'S COMPLEMENT
-**Date:** Tuesday, May 26, 2026
-**Block:** 0 of Season 1 - Binary systems and number bases
-**Status:** Completed. Core concept dominated. Set D at 40%, flagged for DAY_05.
+* **Date:** Tuesday, May 26, 2026
+* **Block:** 0 of Season 1 - Binary systems and number bases
+* **Status:** Completed. Core concept dominated. Set D at 40%, flagged for DAY_05.
 
 ### Phase 1 - Three conceptual questions
 
