@@ -1,26 +1,7 @@
 # DAY_08 - PRIMITIVE TYPES, SIZEOF AND FORMAT SPECIFIERS
-**Date:** Monday, June 8, 2026
-**Block:** 1 of Season 1 - Foundation C
-**Status:** Completed
-
-### Vim tip of the day
-
-`ciw` = change inner word. Executed in normal mode.
-
-Steps: position the cursor over any letter of a word, type `c`, then `i`, then `w`. Vim deletes the full word and drops into insert mode automatically. Type the replacement, then press `Esc` to return to normal mode.
-
-| Command | What it does |
-|---------|--------------|
-| `ciw` | Change word without surrounding spaces |
-| `caw` | Change word with surrounding spaces |
-| `ci"` | Change content inside double quotes |
-| `ci'` | Change content inside single quotes |
-| `ci(` | Change content inside parentheses |
-| `ci[` | Change content inside brackets |
-| `ci{` | Change content inside braces |
-| `cit` | Change content inside HTML/XML tags |
-
-General rule: `c` + `i` + delimiter = change inside that delimiter. Replace `c` with `d` to delete without entering insert. Replace with `y` to copy.
+* **Date:** Monday, June 8, 2026
+* **Block:** 1 of Season 1 - Foundation C
+* **Status:** Completed
 
 ### Phase 2 - Reasoning
 
