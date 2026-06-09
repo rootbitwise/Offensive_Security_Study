@@ -2,7 +2,7 @@
 
 int main(void) {
 
-printf("My firts program\n");
+printf("My First program");
 
 
 return 0;
