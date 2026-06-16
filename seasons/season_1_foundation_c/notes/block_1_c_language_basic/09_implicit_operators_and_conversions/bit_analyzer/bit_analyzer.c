@@ -1,15 +1,15 @@
 // #================================================================================================#
-// # Escribe un programa que tome un numero entre 0 y 255 (definelo como una constante en el codigo #
-// # no hace falta input por teclado todavia) y muestre un analisis copleto de ese byte.            #
+// # Write a program that takes a number between 0 and 255 (define it as a constant in the code    #
+// # no keyboard input needed yet) and shows a complete analysis of that byte.                     #
 // #                                                                                                #
-// # Debe mostrar :                                                                                 # 
+// # It must show :                                                                                 # 
 // #                                                                                                # 
-// # * El valor en decimal                                                                          #
-// # * El valor en hexadecimal                                                                      # 
-// # * El valor intrepretado como signed                                                            #
-// # * El valor interpretado como unsigned                                                          #
-// # * Si el numero es par o impar                                                                  #
-// # * Cuantos bits encendidos (en 1) tiene el byte                                                 #
+// # * The value in decimal                                                                         #
+// # * The value in hexadecimal                                                                     # 
+// # * The value interpreted as signed                                                              #
+// # * The value interpreted as unsigned                                                            #
+// # * Whether the number is even or odd                                                            #
+// # * How many bits are on (at 1) in the byte                                                      #
 // #                                                                                                # 
 // #================================================================================================# 
 
@@ -25,25 +25,25 @@ printf("#======================================#\n");
 printf("\n");
 
 //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-//| 1. Declarar dos  varibales en formato constante, una que guarde el valor total con signo                        |
-//|  y luego guardar la otra haciendo truncamiento para evitar signed extension al guardar el valor en signed char  |
+//| 1. Declare two variables in constant format, one that stores the total value with sign                          |
+//|  and then store the other one doing truncation to avoid signed extension when storing the value in signed char  |
 //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  
 
 unsigned int valor = 200;
 signed char valor_signo = valor;
 
 //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-//| 2. Usar un bucle for declarar i de tamano 7 para mostrar solo los 8 bits bajos del valor, mintras i siga siendo |
-//+  mayor que 0 o hasta que sea igual a 0 ir decementando 1 a i, decalar una variable que haga la operacion de     +
-//|   de mover el valor de la variable $valor a nivel de bit luego ir capturando el bit su posicion actual          |
-//+     aislandolo con el operador & (AND) y por ultimo mostrar por pantalla cada vuelta del bucle para formar el   +
-//|     valor en formato binario.                                                                                   |
+//| 2. Use a for loop, declare i at size 7 to show only the 8 low bits of the value, while i keeps being           |
+//+  greater than 0 or until it equals 0, decrement i by 1 each time, shift a variable that performs the operation +
+//|   of moving the value of the $valor variable at bit level, then capture the bit at its current position        |
+//+     isolating it with the & (AND) operator, and finally print to screen on each loop iteration to form the     +
+//|     value in binary format.                                                                                     |
 //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
 printf("========================================\n");
-printf("* EL VALOR INTERPRETADO COMO BINARIO\n");
+printf("* THE VALUE INTERPRETED AS BINARY\n");
 printf("----------------------------------------\n");
-printf("BINARIO : ");
+printf("BINARY : ");
 
 for (int i = 7; i >= 0; i--){
 	
@@ -53,54 +53,54 @@ for (int i = 7; i >= 0; i--){
 	}	
 
 //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-//| 3. Mostrar por pantalla el valor de la variable unsigned en formato decimal                                     |
+//| 3. Print to screen the value of the unsigned variable in decimal format                                        |
 //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
  
 printf("\n========================================\n");
 printf("----------------------------------------\n");
-printf("* EL VALOR INTERPRETADO COMO DECIMAL\n");
+printf("* THE VALUE INTERPRETED AS DECIMAL\n");
 printf("DECIMAL : %u\n", valor);
 
 //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-//| 4. Tomar la variable con valor unsigned y dividirlo con el operador de modulo y luego comparar el resultado     |
-//|  con 0, si el resultado es igual a 0 mostrar como numero par y si es distinto de 0 mostrar como impar.          |
+//| 4. Take the variable with unsigned value and divide it with the modulo operator then compare the result        |
+//|  with 0, if the result equals 0 show as even number and if it is different from 0 show as odd.                 |
 //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-// como la variable es especifica de 32-bits no hay problemas por comversion implicita o por signed extension.
+// since the variable is specifically 32-bit there are no problems from implicit conversion or signed extension.
 
 printf("========================================\n");
 printf("----------------------------------------\n");
 int divisor = valor % 2;
 
  if (divisor == 0){
-	 printf("* EL VALOR: %d ES UN NUMERO PAR\n", valor);
+	 printf("* THE VALUE: %d IS AN EVEN NUMBER\n", valor);
  	          }  else {
-			printf("* EL VALOR: %d ES UN VALOR IMPAR\n", valor);
+			printf("* THE VALUE: %d IS AN ODD NUMBER\n", valor);
 			}	 
 
 //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-//| 5. Mostrtar por pantalla el valor unsigned interpretado como numero hexadecimal                                 |
+//| 5. Print to screen the unsigned value interpreted as a hexadecimal number                                      |
 //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
 printf("========================================\n");
-printf("* EL VALOR INTERPRETADO COMO NUMERO HEX\n");
+printf("* THE VALUE INTERPRETED AS HEX NUMBER\n");
 printf("----------------------------------------\n");
 printf("HEXADECIMAL : 0x%X\n", valor);
 
 //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-//| 6. Truncar el valor de la variable unsigned a una variable de menor tamano de tipo signed y luego mostrar por   |
-//|  pantalla el valor de esa variable signed                                                                       | 
+//| 6. Truncate the value of the unsigned variable into a smaller signed variable and then print to screen         |
+//|  the value of that signed variable                                                                             | 
 //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
 printf("========================================\n");
-printf("* EL VALOR INTERPRETADO COMO SIGNED \n");
+printf("* THE VALUE INTERPRETED AS SIGNED \n");
 printf("----------------------------------------\n");
 printf("SIGNED : %d\n", valor_signo);
 
 //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-//| 7. Tomar la misma logica del paso 2, modificar el bucle en lugar de mostrar por pantalla, capturar los bits     | 
-//+   que esten encendidos guardarlos en un array y luego contar el size y mostrar por pantalla la cantidad de bits +
-//|    encendidos                                                                                                   |
+//| 7. Take the same logic from step 2, modify the loop, instead of printing to screen, capture the bits          | 
+//+   that are on, store them in an array, then count the size and print to screen the number of bits on           +
+//|                                                                                                                |
 //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
 return 0;
