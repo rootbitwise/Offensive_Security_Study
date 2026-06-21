@@ -1,73 +1,60 @@
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-// | 1. Un for que imprima los numeros del 1 al 20.                            |
-// + * Si el numero es multiplo de 3, imprime fizz en lugar del numero         +
-// | * Si el numero es multiplo de 5. imprime buzz                             |
-// + * Si el numero es multiplo de ambos (15), imprime fizzbuzz                +
-// | * Si no, imprime el numero.                                               |
+// | 1. A for that prints the numbers from 1 to 20.                            |
+// + * If the number is a multiple of 3, print fizz instead of the number      +
+// | * If the number is a multiple of 5, print buzz                            |
+// + * If the number is a multiple of both (15), print fizzbuzz                +
+// | * Otherwise, print the number.                                            |
 // +                                                                           +
-// |  2. Un while que cuente hacia atras desde 10 hasta 0                      |
+// |  2. A while that counts backward from 10 to 0                             |
 // +                                                                           +
-// |  3. Un switch que tome un numero del 1 al 7 (constante en el codigo) e    |
-// +   imprima el dia de la semana correspondiente.                            +
+// |  3. A switch that takes a number from 1 to 7 (constant in the code) and   |
+// +   prints the corresponding day of the week.                               +
 // |                                                                           |
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-
-
 #include <stdio.h>
-
 int main(void){
-
-
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-// | 1. Hacer dos variables que guarden el resultado de dividir i entre 3 y la |
-// +   otra entre 5                                                            +
-// | 2. Hacer otra variable que sume el resultado de ambas variables.          |
+// | 1. Make two variables that store the result of dividing i by 3 and the    |
+// +   other by 5                                                              +
+// | 2. Make another variable that adds the result of both variables.          |
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-
-
-
 printf("=================================\n");
-printf("| FLOW BASIC, PROGRAMA FIZZBUZZ |\n");
+printf("| FLOW BASIC, FIZZBUZZ PROGRAM  |\n");
 printf("=================================\n");
-
-
 	for (int i = 1; i <= 20; i++){
 	
-	// variables del codigo.
+	// code variables.
 	
 	int jump3 = i % 3;
 	int jump5 = i % 5;	
 	int jumping = jump5 + jump3;
 	
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-// | 1. compara el resultado de sumar el residuo de la division de 3 entre el  |
-// +   valor de i y la division de 5 entre i y si el resultado es 0 entonces   +
-// |     imprime fizzbuzz, para decir que es multiplo de 15.                   |
+// | 1. compare the result of adding the remainder of dividing 3 by the        |
+// +   value of i and dividing 5 by i, and if the result is 0 then             +
+// |     print fizzbuzz, to say that it is a multiple of 15.                   |
 // +                                                                           +
-// | 2. comparar la division entre el valor de i con 3, si el resultado es 0   |
-// +    imprimir fizz                                                          +
+// | 2. compare the division between the value of i and 3, if the result is 0  |
+// +    print fizz                                                             +
 // |                                                                           |
-// + 3. comprar la division entre el valor de i con 5, si el resultado es 0    +
-// |    imprime buzz                                                           |
+// + 3. compare the division between the value of i and 5, if the result is 0  +
+// |    print buzz                                                             |
 // +                                                                           + 
-// | 4. si el numero no es multiplo de 3 o de 5 entonces imprime el valor de i |        
+// | 4. if the number is not a multiple of 3 or 5 then print the value of i    |        
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-
-
-
 		if (jumping == 0)
 		{
-			// si jumping es igual a 0 imprime fizzbuzz
+			// if jumping equals 0 print fizzbuzz
 			printf("fizzbuzz\n");
 		}
 		else if (jump3 == 0)
 		{
-			// Si jump3 es igual a 0 entonces imprime fizz
+			// If jump3 equals 0 then print fizz
 			printf("fizz\n");
 		}
 		else if (jump5 == 0 )
 		{	
-			// Si jump5 es igual a 0 entonces imprime buzz 
+			// If jump5 equals 0 then print buzz 
 			printf("buzz\n");
 		}
 		else 
@@ -76,64 +63,50 @@ printf("=================================\n");
 		}
   }
  
-
 printf("================\n");
-
 	int y = 10; 
-
-//imprime una cuenta regresiva desde 10 hasta 0
+//prints a countdown from 10 to 0
  
 	while (y >= 0)
 	{
 		printf("%d\n",y);
 		y--;
 	} 
-
 printf("================\n");
-
-
 	for (int d = 1; d <= 7; d++)
 	{
 		switch(d)
 		{
 			case 1: 
-				printf("Hoy es Lunes\n");
+				printf("Today is Monday\n");
 				printf("-----------------\n");
 			break;
-
 			case 2: 
-				printf("Hoy es Martes\n");
+				printf("Today is Tuesday\n");
 				printf("-----------------\n");
 			break;
-
 			case 3:
-		        	printf("Hoy es Miercoles\n");
+		        	printf("Today is Wednesday\n");
 				printf("-----------------\n");
 			break;
-
 			case 4:
-				printf("Hoy es Jueves\n");
+				printf("Today is Thursday\n");
 				printf("-----------------\n");
 			break;
-
 			case 5:
-				printf("Hoy es Viernes\n");
+				printf("Today is Friday\n");
 				printf("-----------------\n");
 			
 			break;
-
 			case 6:
-				printf("Hoy es Sabado\n");
+				printf("Today is Saturday\n");
 				printf("-----------------\n");
 			break;
-
 			case 7: 
-				printf("Hoy es Domingo\n");
+				printf("Today is Sunday\n");
 				printf("-----------------\n");
 			break;	
 		}
 	}
-
-
 return 0;
-}	
+}
