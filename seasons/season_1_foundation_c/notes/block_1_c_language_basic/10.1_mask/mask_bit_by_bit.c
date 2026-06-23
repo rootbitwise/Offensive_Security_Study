@@ -10,7 +10,7 @@ int main(void)
 // | ambas con el mismo valor decirmal.                                      |                                                        // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
 	 
-int32_t var_signed = -1;
+int32_t var_signed = -32;
 uint32_t var_unsigned = var_signed; // 4 mill millones por asignacion implicita
 
 
@@ -73,7 +73,7 @@ for (int i = 31; i >= 0; i--)
 
 	uint32_t bits = (var_unsigned >> i) &1;
 
-	uint32_t not_bits = bits & ~bits;	
+	uint32_t not_bits = ~bits &1;	
 	printf("%u",not_bits);
 }
 	
