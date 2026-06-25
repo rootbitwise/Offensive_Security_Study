@@ -5,29 +5,28 @@ int main(void)
 {
 
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-// | Declarar dos variables, una sin signo de tamano especifico de 32-bits   |
-// + otra con signo de tamano especifico de 32-bits.	                     +
-// | ambas con el mismo valor decirmal.                                      |                                                        // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+// | Declare two variables, one unsigned of specific size 32-bits            |
+// + another signed of specific size 32-bits.                                +
+// | both with the same decimal value.                                       |  
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 	 
 int32_t var_signed = -32;
-uint32_t var_unsigned = var_signed; // 4 mill millones por asignacion implicita
-
+uint32_t var_unsigned = var_signed; // 4 billion by implicit assignment
 
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-// | Dos bucles for que hacen exactamente lo mismo, primero hacen una cuenta |
-// + regresiva de 31 hasta 0, siempre que la variable sea mayor o igual a 0  +
-// | disminuye 1 valor a la variable.                                        |
+// | Two for loops that do exactly the same thing, first they count down     |
+// + from 31 to 0, as long as the variable is greater than or equal to 0     +
+// | it decreases the variable by 1.                                         |
 // +                                                                         +
-// | cuerpo :                                                                |
+// | body:                                                                   |
 // + ------------------------------------------------------------------------+
-// | una variable que se mueve n posiciones a la izquierda y aisle solo el   |
-// + bit de la posicion en la que se encuenta y luego muestre por pantalla   +
-// | ese bit en especifico, para mostrar el valor en formao binario          |
+// | a variable that moves n positions to the left and isolates only the     |
+// + bit at the position it is currently at and then prints to screen        +
+// | that specific bit, to show the value in binary format                   |
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
 printf("-----------------------------------\n");
-printf("| MOSTRAR CADA BIT DE LA VARIABLE |\n");
+printf("| SHOW EACH BIT OF THE VARIABLE   |\n");
 printf("-----------------------------------\n");
 	
 for (int i = 31; i >= 0; i--)
@@ -36,15 +35,14 @@ for (int i = 31; i >= 0; i--)
 	printf("%d", bit);
 }	
 
-
 printf("\n");
 printf("-----------------------------------\n");
-printf("|    MOSTRAR DECIMAL DE SIGNED    |\n");
+printf("|    SHOW DECIMAL OF SIGNED       |\n");
 printf("-----------------------------------\n");		
 printf("%d\n", var_signed);
 	
 printf("-----------------------------------\n");
-printf("| MOSTRAR LOS BIT DE VAR_UNSIGNED |\n");
+printf("| SHOW THE BITS OF VAR_UNSIGNED   |\n");
 printf("-----------------------------------\n");
 
 for (int i = 31; i >= 0; i--)
@@ -55,24 +53,22 @@ for (int i = 31; i >= 0; i--)
 
 printf("\n");
 printf("-----------------------------------\n");
-printf("| MOSTRAR EL DECIMAL DEL UNSIGNED |\n");
+printf("| SHOW THE DECIMAL OF UNSIGNED    |\n");
 printf("-----------------------------------\n");
 printf("%u",var_unsigned);
 printf("\n");
 
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-// | Usar una mascara con NOT para apagar los 32-bits de la var_unsigned     |
+// | Use a mask with NOT to turn off the 32-bits of var_unsigned             |
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
 printf("-----------------------------------\n");
-printf("| INVERTIR LOS BIT DE VAR_UNIGNED |\n");
+printf("| INVERT THE BITS OF VAR_UNSIGNED |\n");
 printf("-----------------------------------\n");
 
 for (int i = 31; i >= 0; i--)
 {
-
 	uint32_t bits = (var_unsigned >> i) &1;
-
 	uint32_t not_bits = ~bits &1;	
 	printf("%u",not_bits);
 }
