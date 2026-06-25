@@ -8,7 +8,7 @@ int main(void)
 // | Declarar dos variables, una sin signo de tamano especifico de 32-bits   |
 // + otra con signo de tamano especifico de 32-bits.	                     +
 // | ambas con el mismo valor decirmal.                                      |                                                        // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-
+// +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 	 
 int32_t var_signed = -32;
 uint32_t var_unsigned = var_signed; // 4 mill millones por asignacion implicita
@@ -20,7 +20,7 @@ uint32_t var_unsigned = var_signed; // 4 mill millones por asignacion implicita
 // | disminuye 1 valor a la variable.                                        |
 // +                                                                         +
 // | cuerpo :                                                                |
-// + --------                                                                +
+// + ------------------------------------------------------------------------+
 // | una variable que se mueve n posiciones a la izquierda y aisle solo el   |
 // + bit de la posicion en la que se encuenta y luego muestre por pantalla   +
 // | ese bit en especifico, para mostrar el valor en formao binario          |
@@ -76,31 +76,6 @@ for (int i = 31; i >= 0; i--)
 	uint32_t not_bits = ~bits &1;	
 	printf("%u",not_bits);
 }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	return 0;
 }
