@@ -1,34 +1,28 @@
 #include<stdio.h>
+#include<stddef.h>
 
 int main(void){
 
-int array_contenedor[] = {1,100,200,8,16,9,5,50,173,22};
+int container_array[] = {1,100,200,8,16,9,5,50,173,22};
 
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 // | a for loop to access and display all values of the array                                |
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-for (int a = 0; a <= 9; a++)
+int size_array = sizeof(container_array) / sizeof(container_array[0]);
+
+for (int a = 0; a < size_array; a++)
 {
-    printf("%d\n", array_contenedor[a]);
+    printf("%d\n", container_array[a]);
 }
+
 printf("\n");
 
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 // | initialize a counter variable at 0 outside the loop, and then inside the loop           |
 // + keep accumulating the values on each iteration, so when the variable exits it shows     +
 // | the total sum of all accumulated values.                                                |
-// +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-
-int contador = 0;
-
-for (int vueltas = 0; vueltas <= 9; vueltas++)
-{
-    contador = contador + array_contenedor[vueltas];
-}
-printf("the total sum of all values is : %d\n",contador);
-
-// +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+// +                                                                                         +
 // | declare two comparison variables to capture the smallest and largest value              |
 // + of the array, first initialize the variables at a value already inside the array        +
 // | not at 0, because there is no value smaller than 0 to avoid the "menor" variable        |
@@ -36,26 +30,34 @@ printf("the total sum of all values is : %d\n",contador);
 // | comparison variable, if so then change the comparison variable value to that one.       |
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-int comparacion_menor = array_contenedor[3];
-int comparacion_mayor = array_contenedor[3];
+int count = 0;
+int major_comparison = container_array[3];
+int minor_comparison = container_array[3];
 
-for (int control = 0; control <= 9; control++)
+
+for(int turns = 0; turns < size_array; turns++)
 {
-    int comparar_valor = array_contenedor[control];
     
-    if (comparacion_mayor < comparar_valor)
+    count = count + container_array[turns];
+
+   int compare_value = container_array[turns];
+    
+    if (major_comparison < compare_value)
     {
-    	comparacion_mayor = comparar_valor; // if it is larger then replace the variable value with the new value
+        major_comparison = compare_value;   // if it is larger then replace the variable value with the new value
+
     }
     
-    if (comparar_valor < comparacion_menor) // if smaller then replace the comparacion_menor value with the new value
+    if (compare_value < minor_comparison) 
     {
-        comparacion_menor = comparar_valor;
+        minor_comparison = compare_value; // if smaller then replace the comparacion_menor value with the new value
     }
+
 }
 
-printf("The smallest value in the array is : %d\n",comparacion_menor);
-printf("The largest value in the array is : %d\n",comparacion_mayor);
+printf("the total sum of all values is : %d\n",count);
+printf("The smallest value in the array is : %d\n",minor_comparison);
+printf("The largest value in the array is : %d\n", major_comparison);
 
 return 0;
 }
