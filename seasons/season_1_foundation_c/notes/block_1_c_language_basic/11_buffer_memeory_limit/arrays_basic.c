@@ -3,17 +3,17 @@
 
 int main(void){
 
-int container_array[] = {1,100,200,8,16,9,5,50,173,22};
+unsigned int container_array[] = {1,100,200,8,16,9,5,50,173,22};
 
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 // | a for loop to access and display all values of the array                                |
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-int size_array = sizeof(container_array) / sizeof(container_array[0]);
+size_t size_array = sizeof(container_array) / sizeof(container_array[0]);
 
-for (int a = 0; a < size_array; a++)
+for (size_t a = 0; a < size_array; a++)
 {
-    printf("%d\n", container_array[a]);
+    printf("%u\n", container_array[a]);
 }
 
 printf("\n");
@@ -30,17 +30,17 @@ printf("\n");
 // | comparison variable, if so then change the comparison variable value to that one.       |
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-int count = 0;
-int major_comparison = container_array[3];
-int minor_comparison = container_array[3];
+unsigned int count = 0;
+unsigned int major_comparison = container_array[3];
+unsigned int minor_comparison = container_array[3];
 
 
-for(int turns = 0; turns < size_array; turns++)
+for(size_t turns = 0; turns < size_array; turns++)
 {
     
     count = count + container_array[turns];
 
-   int compare_value = container_array[turns];
+   unsigned int compare_value = container_array[turns];
     
     if (major_comparison < compare_value)
     {
@@ -55,9 +55,11 @@ for(int turns = 0; turns < size_array; turns++)
 
 }
 
-printf("the total sum of all values is : %d\n",count);
-printf("The smallest value in the array is : %d\n",minor_comparison);
-printf("The largest value in the array is : %d\n", major_comparison);
+unsigned int average = count / size_array; 
 
+printf("the total sum of all values is : %u\n",count);
+printf("The smallest value in the array is : %u\n",minor_comparison);
+printf("The largest value in the array is : %u\n", major_comparison);
+printf("The average of the values within arrays is : %u\n", average);
 return 0;
 }
