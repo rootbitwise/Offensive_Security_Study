@@ -28,14 +28,17 @@ for (size_t truns = 0; truns < size_array; truns++)
     printf("The inside value in the array is: %u\n", buffer_demo[truns]);
 }
 
-/* Now, within the loop, make `truns` stop once it equals `size_array`,
-so that it reads a value outside the array.
+/* 
+Now, inside the loop, make `trunks` stop once it exceeds the size of `size_array`,
+so that it reads a value outside the array..
 */
 
 printf("\n");
-printf("Reading values ​​outside the array on purpose !!!\nfire\n");
+printf("Reading values ​​outside the array on purpose !!!\n\n");
 
-for (size_t truns2 = 0; truns2 <= size_array; truns2++)
+unsigned int more_value = size_array + 3;
+
+for (size_t truns2 = 0; truns2 <= more_value; truns2++)
 {
     printf("The inside value in the array is: %u\n", buffer_demo[truns2]);
 }

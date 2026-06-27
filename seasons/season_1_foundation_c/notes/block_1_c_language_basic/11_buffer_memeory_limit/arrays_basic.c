@@ -55,11 +55,14 @@ for(size_t turns = 0; turns < size_array; turns++)
 
 }
 
-unsigned int average = count / size_array; 
+/* To calculate the average, we first cast the `count` variable to a float because decimal precision is required, 
+and then divide by `size_array` to obtain the array's average.*/
+
+double average = (double)count / size_array;
 
 printf("the total sum of all values is : %u\n",count);
 printf("The smallest value in the array is : %u\n",minor_comparison);
 printf("The largest value in the array is : %u\n", major_comparison);
-printf("The average of the values within arrays is : %u\n", average);
+printf("The average of the values within arrays is : %.2f\n", average);
 return 0;
 }
