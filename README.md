@@ -73,5 +73,5 @@ Started May 2026.
 
 ### **End Of Documents**
 
-* Autor : Denis Jr. Perez (MalwareArch)
+* Autor : Denis Jr. Perez (RootBitwise)
 * Date  : 19-05-2026 
