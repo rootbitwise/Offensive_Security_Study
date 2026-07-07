@@ -57,7 +57,7 @@ foundations up to looking for work.
 
 ```
 Season 1 - Foundation C
-Block 0: Binary systems and number representation.
+Block 1: C Basic.
 
 Started May 2026.
 ```
