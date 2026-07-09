@@ -35,9 +35,9 @@ By the end of this season I should be able to:
 
 | Block | Focus | Status |
 |-------|-------|--------|
-| 0 | Binary systems and number representation. | Active |
-| 1 | C from scratch. Compilation, types, control flow. | Planned |
-| 2 | Functions, arrays, and strings. | Planned |
+| 0 | Binary systems and number representation. | Complete |
+| 1 | C from scratch. Compilation, types, control flow. | Complete |
+| 2 | Functions, arrays, and strings. | Active |
 | 3 | Pointers and memory. The critical block. | Planned |
 | 4 | Structs, files, and processes. | Planned |
 | 5 | C for security and the closing project. | Planned |
