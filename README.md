@@ -1,6 +1,6 @@
-# **Offensive Security Study**
+# **_Offensive Security Study_**
 
-### About
+### **About**
 
 Hi!, I'm Denis Jr. Perez, and I like to understand what really makes things work; that's why i prefer
 learning a system from the kernel up to the shell.
@@ -10,6 +10,7 @@ security engineer / red team operator.
 
 The journey covers C programming, networking, Windows Fundamentals, Linux Administration, scripting,
 assembly language, and python skills needed both to read existing code and to develop functional tools.
+
 --- 
 
 ### **Repository Map**
