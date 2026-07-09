@@ -2,22 +2,14 @@
 
 ### About
 
-This repository is my study plan and path toward becoming a junior
-offensive security engineer.
+Hi!, I'm Denis Jr. Perez, and I like to understand what really makes things work; that's why i prefer
+learning a system from the kernel up to the shell.
 
-The path covers programming in C, networking, Windows fundamentals,
-scripting, assembly, and enough functional Python to read other people's
-code and write tools that actually work.
+This repository serves as my study plan and the roadmap I'm following to become a entry-level offensive 
+security engineer / red team operator.
 
-This is not a short path. It's a 31-month plan, and it isn't fully
-self-taught either - alongside the self-directed work it also includes
-structured courses. What's written here is just a summary of the route.
-The repo itself is where I track the real progress as it happens.
-
-A bit about me: I'm Denis Jr. Perez. I like understanding what actually
-makes a thing work, which is why I'd rather learn a system from the
-kernel out to the shell than the other way around.
-
+The journey covers C programming, networking, Windows Fundamentals, Linux Administration, scripting,
+assembly language, and python skills needed both to read existing code and to develop functional tools.
 --- 
 
 ### **Repository Map**
@@ -57,7 +49,7 @@ foundations up to looking for work.
 
 ```
 Season 1 - Foundation C
-Block 1: C Basic.
+Block 1: C Language and CS50.
 
 Started May 2026.
 ```
@@ -67,11 +59,11 @@ Started May 2026.
 
 * Languages   :  C, Bash, Python, Assembly (x86-64)
 * Environment :  Arch Linux, Vim, Git
-* Tools       :  GCC, GDB, Valgrind
+* Tools       :  GCC, GDB
 
 ---
 
 ### **End Of Documents**
 
 * Autor : Denis Jr. Perez (RootBitwise)
-* Date  : 19-05-2026 
+* Date  : 09-07-2026 
