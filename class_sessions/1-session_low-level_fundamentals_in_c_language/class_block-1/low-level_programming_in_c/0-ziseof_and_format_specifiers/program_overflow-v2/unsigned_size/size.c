@@ -22,7 +22,7 @@ int main(void)
     printf("int32_t:        %lu byte(s)\n", sizeof(int32_t));
     printf("int64_t:        %lu byte(s)\n", sizeof(int64_t));
 
-    printf("\n=== Rangos signed ===\n\n");
+    printf("\n=== Range signed ===\n\n");
 
     printf("CHAR_MIN:       %d\n", CHAR_MIN);
     printf("CHAR_MAX:       %d\n", CHAR_MAX);

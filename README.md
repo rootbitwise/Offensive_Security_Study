@@ -18,9 +18,9 @@ assembly language, and python skills needed both to read existing code and to de
 ```
 Offensive_Security_study/
 ├── seasons/                     # Study tracks, one folder per season
-│   └── season_1_foundation_c/
+│   └── 1-session_low-level_fundamentals_in_c_language/
 │       ├── README.md            # Season summary and goals
-│       └── notes/               # Daily class notes
+│       └── 0-class_notes/       # Daily class notes
 ├── certifications/              # Certification prep notes and progress
 ├── labs/                        # Practice machine writeups and lab work
 └── milestones.md                # Log of completed milestones
@@ -50,7 +50,7 @@ foundations up to looking for work.
 
 ```
 Season 1 - Foundation C
-Block 1: C Language and CS50.
+Block 2: C Language
 
 Started May 2026.
 ```
