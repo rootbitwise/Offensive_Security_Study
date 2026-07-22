@@ -1,6 +1,6 @@
 # Offensive Reasoning - Class 13
 
-* **Date :** 222-07-2026
+* **Date :** 22-07-2026
 * **Topic :** Attacking developer assumptions, OOB read, info leak
 
 > Note  : Claude corrections are at the end of this document.
