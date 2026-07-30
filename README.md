@@ -42,7 +42,7 @@ foundations up to looking for work.
 ###  **Current Status**
 
 ```
-Season 1 - Season 1 Foundation C 
+Season : Season 1 Foundation C 
 
 Started July 2026.
 ```
