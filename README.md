@@ -5,8 +5,7 @@
 Hi!, I'm Denis Jr. Perez, and I like to understand what really makes things work; that's why i prefer
 learning a system from the kernel up to the shell.
 
-This repository serves as my study plan and the roadmap I'm following to become a entry-level offensive 
-security engineer / red team operator.
+This repository serves as my study plan and the roadmap I'm following to become a offensive security engineer.
 
 The journey covers C programming, networking, Windows Fundamentals, Linux Administration, scripting,
 assembly language, and python skills needed both to read existing code and to develop functional tools.
@@ -17,13 +16,7 @@ assembly language, and python skills needed both to read existing code and to de
 
 ```
 Offensive_Security_study/
-├── seasons/                     # Study tracks, one folder per season
-│   └── 1-session_low-level_fundamentals_in_c_language/
-│       ├── README.md            # Season summary and goals
-│       └── 0-class_notes/       # Daily class notes
-├── certifications/              # Certification prep notes and progress
-├── labs/                        # Practice machine writeups and lab work
-└── milestones.md                # Log of completed milestones
+└── README.md                # You're here. This page contains the summary of this repo.
 
 ```
 
@@ -37,7 +30,7 @@ foundations up to looking for work.
 |--------|-------|--------|
 | 1 | Foundation C. Programming in C, from binary systems up to C used for security. | Active |
 | 2 | Linux Hardened. Linux internals, bash, permissions, processes and system hardening. | Planned |
-| 3 | Networking. TCP/IP, routing, and the core networking knowledge a CCNA covers. | Planned |
+| 3 | Networking. TCP/IP, routing, and the core networking knowledge. | Planned |
 | 4 | Python Bridge. Functional Python for reading code and writing working scripts. | Planned |
 | 5 | Offensive Core. Hands-on offensive practice and real attack techniques. | Planned |
 | 6 | Tooling Development. Building small security tools in C. | Planned |
@@ -49,10 +42,9 @@ foundations up to looking for work.
 ###  **Current Status**
 
 ```
-Season 1 - Foundation C
-Block 2: C Language
+Season 1 - Season 1 Foundation C 
 
-Started May 2026.
+Started July 2026.
 ```
 ---
 
@@ -67,4 +59,4 @@ Started May 2026.
 ### **End Of Documents**
 
 * Autor : Denis Jr. Perez (RootBitwise)
-* Date  : 09-07-2026 
+* Date  : 30-07-2026 
